@@ -47,6 +47,7 @@ def create_directories(paths: list, verbose=True):
            logger.info(f"Created directory: {path}")    
         
 @ensure_annotations
-def get_file_size(file_path: Path) -> int:
-    size_in_kb=round(os.path.getsize(file_path) / 1024)
+def get_file_size(path: Path) -> str:
+    """get size in KB as formatted string"""
+    size_in_kb = round(os.path.getsize(path)/1024)
     return f"{size_in_kb} KB"
