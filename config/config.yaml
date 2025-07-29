@@ -29,6 +29,6 @@ model_trainer:
 model_evaluation:
   root_dir: artifacts/model_evaluation
   data_path: artifacts/data_transformation/samsum_dataset  
-  model_path: artifacts/model_trainer/t5_small_model  
+  model_path: artifacts/model_trainer/pegasus-samsum-model  # Updated to match your actual path
   tokenizer_path: artifacts/model_trainer/tokenizer
-  metrics_file: artifacts/model_evaluation/metrics.json
+  metrics_file: artifacts/model_evaluation/metrics.csv
